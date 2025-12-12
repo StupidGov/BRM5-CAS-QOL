@@ -276,9 +276,22 @@ class MainConfigMenu(QMainWindow):
         theme_btn.clicked.connect(self.toggle_theme)
         button_layout.addWidget(theme_btn)
 
-        apply_btn = QPushButton("Apply & Close")
-        apply_btn.clicked.connect(self.apply_and_close)
-        button_layout.addWidget(apply_btn)
+        run_btn = QPushButton("▶ Run ViewFinder")
+        run_btn.clicked.connect(self.apply_and_close)
+        run_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #0d7377;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            QPushButton:hover {
+                background-color: #14ffec;
+                color: #000000;
+            }
+        """)
+        button_layout.addWidget(run_btn)
 
         main_layout.addLayout(button_layout)
 

@@ -1,0 +1,13 @@
+# Core GUI Framework
+PyQt5>=5.15.0
+
+# Screen capture and computer vision
+mss>=6.1.0
+opencv-python>=4.5.0
+numpy>=1.21.0
+
+# Keyboard input handling
+keyboard>=0.13.5
+
+# Build tool for compilation (optional, for compiler.pyw)
+pyinstaller>=5.0.0
